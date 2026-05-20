@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AskShree - Sales Consultancy Website
 
 Professional website for AskShree, a sales consultancy firm specializing in lead generation for IoT, SaaS, and Tech companies.
@@ -251,3 +252,7 @@ For technical support or questions:
 ---
 
 **Built with ❤️ for AskShree by Prince Pasi**
+=======
+# askshree-website
+website
+>>>>>>> 1da03d4ebe21a5cff2b709de2f1530941bb1f3c1
