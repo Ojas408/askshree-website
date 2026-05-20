@@ -18,8 +18,8 @@ export default function Comparison() {
       feature: 'Monthly Investment',
       askshree: 'Mid-range',
       diy: 'Time = money',
-      inhouse: '$5,000-8,000/month',
-      agency: '$3,000-10,000/month'
+      inhouse: '₹40,000-80,000/month',
+      agency: '₹25,000-1,00,000/month'
     },
     {
       feature: 'Lead Quality',
