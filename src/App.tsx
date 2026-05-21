@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
@@ -33,7 +34,12 @@ function App() {
   }, []);
 
   if (showAdmin) {
-    return <AdminDashboard />;
+    return (
+      <>
+        <AdminDashboard />
+        <Analytics />
+      </>
+    );
   }
 
   return (
@@ -50,6 +56,7 @@ function App() {
       <FAQ />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 }
