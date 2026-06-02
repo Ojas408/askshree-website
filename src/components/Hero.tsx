@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="max-w-4xl w-full text-center space-y-6 md:space-y-8">
           {/* Badge */}
           <div className="inline-block">
-            <span className="bg-brown-900/50 text-brown-200 px-6 md:px-8 py-3 rounded-full text-base md:text-lg font-semibold border border-brown-700 backdrop-blur-sm">
+            <span className="bg-brown-900/60 text-brown-100 px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-lg lg:text-xl font-semibold border border-brown-600 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow">
               Professional Lead Generation Services
             </span>
           </div>
@@ -51,7 +51,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <button
               onClick={scrollToContact}
-              className="bg-gradient-to-r from-brown-500 to-brown-600 text-white px-6 py-3 md:px-10 md:py-4 rounded-full font-bold text-lg hover:from-brown-600 hover:to-brown-700 transition-all shadow-lg"
+              className="bg-gradient-to-r from-brown-500 to-brown-600 text-white px-6 py-3 md:px-10 md:py-4 rounded-full font-bold text-lg hover:from-brown-600 hover:to-brown-700 transition-all shadow-lg hover:shadow-xl"
             >
               Get Started Today
             </button>
