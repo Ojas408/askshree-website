@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="max-w-4xl w-full text-center space-y-6 md:space-y-8">
           {/* Badge */}
           <div className="inline-block">
-            <span className="bg-brown-900/50 text-brown-200 px-4 md:px-6 py-2 rounded-full text-base md:text-sm font-semibold border border-brown-700 backdrop-blur-sm">
+            <span className="bg-brown-900/50 text-brown-200 px-6 md:px-8 py-3 rounded-full text-base md:text-lg font-semibold border border-brown-700 backdrop-blur-sm">
               Professional Lead Generation Services
             </span>
           </div>
