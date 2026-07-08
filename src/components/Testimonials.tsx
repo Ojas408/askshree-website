@@ -4,7 +4,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold text-brown-700 uppercase tracking-wider mb-2">Why Choose AskShree</h2>
+          <h2 className="text-sm font-semibold text-brown-700 uppercase tracking-wider mb-2">Why Choose Askshree Solutions</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
             What You Can Expect
           </h3>

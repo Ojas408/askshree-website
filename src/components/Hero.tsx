@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-xl text-navy-700 leading-relaxed">
-              AskShree delivers qualified, verified leads for IoT, SaaS, Tech companies and startups through strategic cold calling, targeted email campaigns, and LinkedIn outreach. We find the prospects - you close the deals.
+              Askshree Solutions delivers qualified, verified leads for IoT, SaaS, Tech companies and startups through strategic cold calling, targeted email campaigns, and LinkedIn outreach. We find the prospects - you close the deals.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

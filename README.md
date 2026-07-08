@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-# AskShree - Sales Consultancy Website
+# Askshree Solutions - Sales Consultancy Website
 
-Professional website for AskShree, a sales consultancy firm specializing in lead generation for IoT, SaaS, and Tech companies.
+Professional website for Askshree Solutions, a sales consultancy firm specializing in lead generation for IoT, SaaS, and Tech companies.
 
-## 🎯 About AskShree
+## 🎯 About Askshree Solutions
 
 **Founder:** Prince Pasi  
 **Services:** Cold Calling, Cold Email Campaigns, LinkedIn Outreach  
@@ -13,18 +12,17 @@ Professional website for AskShree, a sales consultancy firm specializing in lead
 
 ## 🌐 Domain Recommendations
 
-Based on availability research, here are recommended domain options for AskShree:
+Based on availability research, here are recommended domain options for Askshree Solutions:
 
 ### Primary Options:
-1. **askshree.com** - Check availability at [Namecheap](https://www.namecheap.com) or [GoDaddy](https://www.godaddy.com)
-2. **askshree.in** - Perfect for Indian market presence
-3. **askshree.io** - Modern tech-focused domain
+1. **askshreesolutions.com** - Check availability at [Namecheap](https://www.namecheap.com) or [GoDaddy](https://www.godaddy.com)
+2. **askshreesolutions.in** - Perfect for Indian market presence
+3. **askshreesolutions.io** - Modern tech-focused domain
 
 ### Alternative Options:
-- **getaskshree.com** - If primary .com is taken
-- **askshree.co** - Short and professional
-- **askshreeconsulting.com** - Descriptive option
-- **askshree.ai** - Tech-forward branding
+- **getaskshreesolutions.com** - If primary .com is taken
+- **askshreesolutions.co** - Short and professional
+- **askshree.solutions** - Descriptive option
 
 ### Recommended Registrars:
 1. **Namecheap** - Best overall value ($10-15/year for .com)
@@ -104,155 +102,3 @@ Access the admin dashboard to view contact form submissions:
 
 - URL: Add `/admin` to your routes or access via AdminDashboard component
 - Default Password: `askshree2024`
-
-**Note:** Change the password in `src/components/AdminDashboard.tsx` before deploying to production!
-
-## 🔧 Configuration
-
-### Email Notifications
-
-The current implementation uses a mock email service. To enable real email notifications:
-
-1. Choose an email service:
-   - **SendGrid** (Recommended)
-   - **AWS SES**
-   - **Mailgun**
-   - **Nodemailer with SMTP**
-
-2. Update `src/utils/database.ts` with your email service API
-
-Example with SendGrid:
-```typescript
-import sgMail from '@sendgrid/mail';
-
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-export const sendEmailNotification = async (submission: ContactSubmission) => {
-  const msg = {
-    to: 'princepasi060@gmail.com',
-    from: 'noreply@askshree.com',
-    subject: \`New Contact from \${submission.name}\`,
-    html: \`
-      <h2>New Contact Form Submission</h2>
-      <p><strong>Name:</strong> \${submission.name}</p>
-      <p><strong>Email:</strong> \${submission.email}</p>
-      <p><strong>Phone:</strong> \${submission.phone}</p>
-      <p><strong>Company:</strong> \${submission.company}</p>
-      <p><strong>Message:</strong> \${submission.message}</p>
-    \`
-  };
-  
-  await sgMail.send(msg);
-};
-```
-
-### Database Upgrade
-
-To replace LocalStorage with a real database:
-
-1. **MongoDB** (Recommended for scaling):
-```bash
-npm install mongodb mongoose
-```
-
-2. **PostgreSQL**:
-```bash
-npm install pg
-```
-
-3. **Firebase**:
-```bash
-npm install firebase
-```
-
-4. Update `src/utils/database.ts` with your database connection
-
-## 🌍 Deployment
-
-### Deploying to Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Go to [Vercel](https://vercel.com)
-3. Import your repository
-4. Vercel will auto-detect Vite
-5. Click "Deploy"
-6. Connect your custom domain (askshree.com)
-
-### Deploying to Netlify
-
-1. Build the project: `npm run build`
-2. Drag the `dist` folder to [Netlify Drop](https://app.netlify.com/drop)
-3. Or connect your GitHub repository for continuous deployment
-
-### Deploying to Traditional Hosting
-
-1. Build: `npm run build`
-2. Upload contents of `dist` folder to your web server
-3. Configure server to serve `index.html` for all routes
-
-## 📧 Contact Form Data
-
-All contact submissions are stored in browser's LocalStorage under the key `askshree_contacts`.
-
-To access submissions programmatically:
-```javascript
-const submissions = JSON.parse(localStorage.getItem('askshree_contacts') || '[]');
-console.log(submissions);
-```
-
-## 🔒 Security Notes
-
-1. **Change Admin Password** - Update password in AdminDashboard.tsx
-2. **Enable HTTPS** - Use SSL certificate (free with Vercel/Netlify)
-3. **Add Rate Limiting** - Prevent spam on contact form
-4. **Implement CAPTCHA** - Use Google reCAPTCHA for form protection
-5. **Environment Variables** - Store sensitive data in .env files
-
-## 📈 SEO Optimization
-
-The website includes:
-- Semantic HTML structure
-- Meta descriptions
-- Optimized headings (H1-H6)
-- Alt text for images
-- Fast loading times
-- Mobile-responsive design
-
-To further improve SEO:
-1. Add Google Analytics
-2. Submit sitemap to Google Search Console
-3. Add Open Graph tags for social sharing
-4. Implement structured data (Schema.org)
-
-## 🎨 Customization
-
-### Colors
-Main colors are defined in Tailwind classes:
-- Primary: `blue-600` (Can be changed globally)
-- Secondary: `purple-600`
-- Accent: `green-500`
-
-### Content
-Update content in respective component files:
-- Hero: `src/components/Hero.tsx`
-- About: `src/components/About.tsx`
-- Services: `src/components/Services.tsx`
-- Testimonials: `src/components/Testimonials.tsx`
-
-## 📞 Support
-
-For technical support or questions:
-- Email: princepasi060@gmail.com
-- Phone: +91 9004929362
-
-## 📄 License
-
-© 2024 AskShree. All rights reserved.
-
----
-
-**Built with ❤️ for AskShree by Prince Pasi**
-=======
-# askshree-website
-website
->>>>>>> 1da03d4ebe21a5cff2b709de2f1530941bb1f3c1
