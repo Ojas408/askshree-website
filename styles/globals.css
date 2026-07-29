@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --color-primary: #0B1F4D;
+  --color-primary-deep: #123C73;
+  --color-accent: #2A7DE1;
+  --color-accent-light: #5FB3FF;
+}
+
+html,body,#root{
+  height:100%;
+}
+
+body{
+  @apply bg-white text-slate-900 antialiased;
+  font-family: theme('fontFamily.body');
+}
+
+.hero-wrap{
+  height:100vh;
+}
